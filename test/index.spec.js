@@ -10,6 +10,16 @@ describe('String util', function() {
       	expect(lib.isAlpha('adflj43faljsdf')).to.be.false;
       	expect(lib.isAlpha('33')).to.be.false;
       	expect(lib.isAlpha('')).to.be.false;
+      });
+    });
+
+    describe('- isUpper()', function() {
+      it('should return true if the character or string is uppercase', function() {
+      	expect(lib.isUpper('a')).to.be.false;
+      	expect(lib.isUpper('z')).to.be.false;
+      	expect(lib.isUpper('B')).to.be.true;
+      	expect(lib.isUpper('HIJP')).to.be.true;
+      	expect(lib.isUpper('HelLO')).to.be.false;
       })
     })
 });
