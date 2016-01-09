@@ -1,7 +1,7 @@
 {
   "name": "commitizen-testing",
   "version": "0.0.1",
-  "description": "An example of Commitizen",
+  "description": "An test for Commitizen",
   "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
