@@ -1,0 +1,27 @@
+{
+  "name": "commitizen-practise",
+  "version": "0.0.1",
+  "description": "An example of Commitizen",
+  "main": "src/index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w",
+    "test": "mocha test/index.spec.js"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "commitizen": "^2.4.6",
+    "conventional-changelog": "^0.5.3",
+    "cz-conventional-changelog": "^1.1.5",
+    "mocha": "^2.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taak77/commitizen-practise.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
