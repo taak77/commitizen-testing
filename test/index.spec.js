@@ -20,6 +20,16 @@ describe('String util', function() {
       	expect(lib.isUpper('B')).to.be.true;
       	expect(lib.isUpper('HIJP')).to.be.true;
       	expect(lib.isUpper('HelLO')).to.be.false;
-      })
-    })
+      });
+    });
+
+    describe('- isLower()', function() {
+      it('should return true if the character or string is lowercase', function() {
+      	expect(lib.isLower('a')).to.be.true;
+      	expect(lib.isLower('z')).to.be.true;
+      	expect(lib.isLower('B')).to.be.false;
+      	expect(lib.isLower('hijp')).to.be.true;
+      	expect(lib.isLower('HelLO')).to.be.false;
+      });
+    });
 });
