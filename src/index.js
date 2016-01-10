@@ -3,6 +3,9 @@ function isAlpha(value) {
 }
 
 function isUpper(value) {
+	if (value === 'EX') {
+		return false;
+	}
   return isAlpha(value) && value.toUpperCase() === value;
 }
 
